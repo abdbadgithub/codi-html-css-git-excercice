@@ -1,4 +1,16 @@
 /* Add your CSS code below */
-.link,
-link--map {
+.link {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+.message__content {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.message--unread {
+  border-left: 4px solid blue;
+}
+.message.firstmessage {
+  opacity: 0.5;
 }
