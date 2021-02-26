@@ -1,1 +1,16 @@
-/* Add your own CSS code below */
+.country {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .country {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .country {
+    width: 100%;
+  }
+}
