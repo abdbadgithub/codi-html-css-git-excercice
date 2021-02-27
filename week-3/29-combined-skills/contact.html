@@ -56,13 +56,33 @@
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
           </div>
           <div class="contact-form__field">
+            <label for="foo_bar"> Message</label>
             <textarea
+              id="message"
               name="message"
               placeholder="Your message should not be longer than 200 words."
+              required
             ></textarea>
+            <fieldset>
+              <legend>What branch are you interested in ?</legend>
+              <div>
+                <input type="radio" name="beirut" id="beirut" />
+                <label for="beirut">Beirut </label>
+              </div>
+              <div>
+                <input type="radio" name="tripoli" id="tripoli" />
+                <label for="tripoli">Tripoly </label>
+              </div>
+              <div>
+                <input type="radio" name="sour" id="sour" />
+                <label for="sour">Sour </label>
+              </div>
+            </fieldset>
           </div>
           <button type="submit">Send</button>
         </form>
